@@ -1,0 +1,24 @@
+{% extends 'base2.html' %}
+{% block body_block %}
+<h1> Car Care - Here are the results:</h1>
+
+<div class="jumbotron2">
+    <h3>Car Check :</h3>
+        {{ g1_pic }}
+    <h3>Damage Check :</h3>
+        {{ g2_pic }}
+    <h3>Location Check :</h3>
+        {{ loc }}
+    <h4>Severity Check :</h4>
+        {{ sev }}
+    <h4>Additional Services :</h4>
+        {{ ns|linebreaks }}
+
+</div>
+
+<div class="bottom">
+    <h5>Thanks For Using Car Care Portal</h5>
+    <h6>&copy sanadbawab0@gmail.com</h6>
+</div>
+
+{% endblock %}
